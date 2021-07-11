@@ -14,4 +14,9 @@ public class LimitsConfigurationController {
 	public LimitConfiguration retriveLimitsFromConfigurations() {
 		return new LimitConfiguration(configuration.getMaximum(), configuration.getMinimum());
 	}
+	@GetMapping("/")
+	public String getHomePage()
+	{
+		return "<center>Limits Service</center>";
+	}
 }
